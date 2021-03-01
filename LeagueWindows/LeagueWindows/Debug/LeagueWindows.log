@@ -1,0 +1,47 @@
+﻿  Banana.cpp
+C:\Users\irawo\Source\Repos\LeagueWindows\LeagueWindows\Banana.cpp(43,24): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\irawo\Source\Repos\LeagueWindows\LeagueWindows\Banana.cpp(44,24): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Engine.cpp
+C:\Users\irawo\Source\Repos\LeagueWindows\LeagueWindows\Engine.cpp(59,24): warning C4244: 'argument': conversion from 'double' to 'Uint32', possible loss of data
+  HUD.cpp
+C:\Users\irawo\Source\Repos\LeagueWindows\LeagueWindows\HUD.cpp(36,18): warning C4244: '+=': conversion from 'double' to 'int', possible loss of data
+C:\Users\irawo\Source\Repos\LeagueWindows\LeagueWindows\HUD.cpp(49,24): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\irawo\Source\Repos\LeagueWindows\LeagueWindows\HUD.cpp(50,24): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Interfaces.cpp
+  main.cpp
+  Scene.cpp
+  Utility.cpp
+  Generating Code...
+Banana.obj : error LNK2019: unresolved external symbol _SDL_GetError referenced in function "public: __thiscall Banana::Banana(void)" (??0Banana@@QAE@XZ)
+Engine.obj : error LNK2001: unresolved external symbol _SDL_GetError
+HUD.obj : error LNK2001: unresolved external symbol _SDL_GetError
+Banana.obj : error LNK2019: unresolved external symbol _SDL_FreeSurface referenced in function "public: virtual __thiscall Banana::~Banana(void)" (??1Banana@@UAE@XZ)
+HUD.obj : error LNK2001: unresolved external symbol _SDL_FreeSurface
+Banana.obj : error LNK2019: unresolved external symbol _SDL_Log referenced in function "public: __thiscall Banana::Banana(void)" (??0Banana@@QAE@XZ)
+Engine.obj : error LNK2001: unresolved external symbol _SDL_Log
+HUD.obj : error LNK2001: unresolved external symbol _SDL_Log
+main.obj : error LNK2001: unresolved external symbol _SDL_Log
+Banana.obj : error LNK2019: unresolved external symbol _SDL_CreateTextureFromSurface referenced in function "public: __thiscall Banana::Banana(void)" (??0Banana@@QAE@XZ)
+HUD.obj : error LNK2001: unresolved external symbol _SDL_CreateTextureFromSurface
+Banana.obj : error LNK2019: unresolved external symbol _SDL_RenderCopy referenced in function "public: virtual void __thiscall Banana::draw(void)" (?draw@Banana@@UAEXXZ)
+HUD.obj : error LNK2001: unresolved external symbol _SDL_RenderCopy
+Banana.obj : error LNK2019: unresolved external symbol _SDL_DestroyTexture referenced in function "public: virtual __thiscall Banana::~Banana(void)" (??1Banana@@UAE@XZ)
+HUD.obj : error LNK2001: unresolved external symbol _SDL_DestroyTexture
+Banana.obj : error LNK2019: unresolved external symbol _IMG_Load referenced in function "public: __thiscall Banana::Banana(void)" (??0Banana@@QAE@XZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_CreateWindow referenced in function "public: __thiscall Engine::Engine(int,int)" (??0Engine@@QAE@HH@Z)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_DestroyWindow referenced in function "public: __thiscall Engine::~Engine(void)" (??1Engine@@QAE@XZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_PollEvent referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_CreateRenderer referenced in function "public: __thiscall Engine::Engine(int,int)" (??0Engine@@QAE@HH@Z)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_SetRenderDrawColor referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_RenderClear referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_RenderPresent referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_DestroyRenderer referenced in function "public: __thiscall Engine::~Engine(void)" (??1Engine@@QAE@XZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_GetTicks referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_Delay referenced in function "public: void __thiscall Engine::run(void)" (?run@Engine@@QAEXXZ)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_Init referenced in function "public: __thiscall Engine::Engine(int,int)" (??0Engine@@QAE@HH@Z)
+Engine.obj : error LNK2019: unresolved external symbol _SDL_Quit referenced in function "public: __thiscall Engine::~Engine(void)" (??1Engine@@QAE@XZ)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol _main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\irawo\Source\Repos\LeagueWindows\SDL2-devel-2.0.14-VC\SDL2-2.0.14\lib\x64\SDL2.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\irawo\Source\Repos\LeagueWindows\SDL2-devel-2.0.14-VC\SDL2-2.0.14\lib\x64\SDL2main.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\irawo\Source\Repos\LeagueWindows\SDL2_image-2.0.5\lib\x64\SDL2_image.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\irawo\Source\Repos\LeagueWindows\Debug\LeagueWindows.exe : fatal error LNK1120: 20 unresolved externals
