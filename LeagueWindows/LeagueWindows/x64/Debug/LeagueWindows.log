@@ -1,0 +1,4 @@
+﻿  Elephant.cpp
+C:\Users\AbbyB\OneDrive\GVSU\cis380\LeagueWindows\LeagueWindows\Elephant.cpp(28,24): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\AbbyB\OneDrive\GVSU\cis380\LeagueWindows\LeagueWindows\Elephant.cpp(29,24): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  LeagueWindows.vcxproj -> C:\Users\AbbyB\OneDrive\GVSU\cis380\LeagueWindows\x64\Debug\LeagueWindows.exe
