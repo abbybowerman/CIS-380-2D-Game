@@ -2,6 +2,7 @@
 #include "Properties.hpp"
 #include "Scene.hpp"
 #include <SDL.h>
+#include <SDL_image.h>
 #include <SDL_ttf.h>
 
 // For linking purposes, we need to declare this static member in the cpp file.
@@ -25,6 +26,8 @@ Engine::Engine(int _width, int _height){
 }
 
 Engine::~Engine(){
+	SDL_DestroyTexture(Engine::texture);
+	SDL_FreeSurface(Engine::image);
 	SDL_Log("Destroying renderer.");
 	SDL_DestroyRenderer(Engine::renderer);
 	SDL_Log("Destroying window.");
@@ -87,7 +90,8 @@ void Engine::run(){
 			(*it)->update(gameDelta);
 		}			
 
-		SDL_SetRenderDrawColor(Engine::renderer, BGR, BGG, BGB, BGA);
+		SDL_SetRenderDrawColor(Engine::renderer, 0, 0, 255, 255);
+		SDL_RenderPresent(Engine::renderer);
 		SDL_RenderClear(Engine::renderer);
 		// Render
 		for(std::vector<Drawable*>::iterator it = currentScene->drawables.begin(); it != currentScene->drawables.end(); ++it){

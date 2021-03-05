@@ -4,6 +4,9 @@
 #include <string>
 
 Elephant::Elephant() : Sprite("../assets/Elephant.png") {
+	//this places the elephant on the grass
+	position.setX(0);
+	position.setY(550);
 }
 
 Elephant::~Elephant() {

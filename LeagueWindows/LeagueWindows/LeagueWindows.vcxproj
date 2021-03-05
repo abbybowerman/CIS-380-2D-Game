@@ -22,6 +22,7 @@
     <ClCompile Include="Banana.cpp" />
     <ClCompile Include="Elephant.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Background.cpp" />
     <ClCompile Include="HUD.cpp" />
     <ClCompile Include="Interfaces.cpp" />
     <ClCompile Include="main.cpp" />
@@ -33,6 +34,7 @@
     <ClInclude Include="Banana.hpp" />
     <ClInclude Include="Elephant.hpp" />
     <ClInclude Include="Engine.hpp" />
+    <ClInclude Include="Background.hpp" />
     <ClInclude Include="HUD.hpp" />
     <ClInclude Include="Interfaces.hpp" />
     <ClInclude Include="Properties.hpp" />

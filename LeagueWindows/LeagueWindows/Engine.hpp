@@ -24,6 +24,8 @@ class Engine {
 		Scene* currentScene;
 		int cumulative;
 		int framecount;
+		SDL_Surface* image;
+		SDL_Texture* texture;
 };
 
 #endif
