@@ -1,6 +1,7 @@
 #include "Engine.hpp"
 #include "Sprite.hpp"
 #include "Elephant.hpp"
+#include "laser.hpp"
 #include <string>
 
 Elephant::Elephant() : Sprite("../assets/Elephant.png") {
@@ -55,4 +56,18 @@ void Elephant::down(double delta) {
 	if (velocity.getY() < 200) {
 		velocity.setY(velocity.getY() + 10);
 	}
+}
+
+void Elephant::setScene(Scene* scene) {
+	this->scene = scene;
+}
+
+void Elephant::fire(double delta) {
+	laser* l = new laser();
+	l->position.setX(position.getX());
+	l->position.setY(position.getY());
+	l->velocity.setX(velocity.getX() * 2);
+	l->velocity.setY(velocity.getY() * 2);
+	this->scene->addDrawable(l);
+	this->scene->addUpdateable(l);
 }
