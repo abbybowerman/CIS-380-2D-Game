@@ -5,6 +5,7 @@
 #include <SDL_image.h>
 #include "Interfaces.hpp"
 #include "Utility.hpp"
+#include "Scene.hpp"
 #include <string>
 
 
@@ -18,8 +19,12 @@ class Elephant : public Sprite {
 		void down(double delta);
 		void update(double delta);
 		void draw();
+		void setScene(Scene* scene);
+		void fire(double delta);
+	
 	private:
 		Vector3 velocity;
+		Scene* scene;
 };
 
 #endif // !__ELEPHANT__HPP__

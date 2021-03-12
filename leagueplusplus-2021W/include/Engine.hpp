@@ -3,7 +3,7 @@
 
 #include "Interfaces.hpp"
 #include "Scene.hpp"
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 class Engine {
 	public:
@@ -24,6 +24,8 @@ class Engine {
 		Scene* currentScene;
 		int cumulative;
 		int framecount;
+		SDL_Surface* image;
+		SDL_Texture* texture;
 };
 
 #endif

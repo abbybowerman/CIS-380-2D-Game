@@ -1,4 +1,4 @@
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #include "Interfaces.hpp"
 #include "Utility.hpp"
 #include "Scene.hpp"
@@ -16,7 +16,7 @@ void Scene::addUpdateable(Updateable* obj){
 }
 
 void Scene::addDrawable(Drawable* obj){
-	this->drawables.push_back(obj);
+	drawables.push_back(obj);
 }
 
 void Scene::addKeyEvent(SDL_Keycode key, Callback fn){

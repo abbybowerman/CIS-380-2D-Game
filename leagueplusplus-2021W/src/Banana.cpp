@@ -1,5 +1,6 @@
 #include "Engine.hpp"
 #include "Banana.hpp"
+#include "laser.hpp"
 
 Banana::Banana(){
 	surface = IMG_Load("../assets/banana.png");
@@ -66,4 +67,18 @@ void Banana::down(double delta){
 	if(velocity.getY() < 200 ){
 		velocity.setY(velocity.getY() + 10);
 	}
+}
+
+void Banana::setScene(Scene* scene) {
+	this->scene = scene;
+}
+
+void Banana::fire(double delta) {
+	laser* l = new laser();
+	l->position.setX(position.getX());
+	l->position.setY(position.getY());
+	l->velocity.setX(velocity.getX() * 2);
+	l->velocity.setY(velocity.getY() * 2);
+	this->scene->addDrawable(l);
+	this->scene->addUpdateable(l);
 }
