@@ -1,6 +1,7 @@
 #include "Engine.hpp"
 #include "Sprite.hpp"
 #include "Background.hpp"
+#include "Slime.hpp"
 #include <string>
 
 Background::Background() : Sprite("../assets/Background.png") {

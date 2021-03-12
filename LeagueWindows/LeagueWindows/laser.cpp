@@ -2,7 +2,7 @@
 #include "laser.hpp"
 
 laser::laser() {
-	surface = IMG_Load("./assets/banana.png");
+	surface = IMG_Load("../assets/laser.png");
 	if (surface == NULL) {
 		SDL_Log("The laser won't load!");
 		exit(1);

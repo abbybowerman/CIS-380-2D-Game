@@ -63,11 +63,11 @@ void Elephant::setScene(Scene* scene) {
 }
 
 void Elephant::fire(double delta) {
-	laser* l = new laser();
+	/*laser* l = new laser();
 	l->position.setX(position.getX());
 	l->position.setY(position.getY());
 	l->velocity.setX(velocity.getX() * 2);
 	l->velocity.setY(velocity.getY() * 2);
 	this->scene->addDrawable(l);
-	this->scene->addUpdateable(l);
+	this->scene->addUpdateable(l);*/
 }

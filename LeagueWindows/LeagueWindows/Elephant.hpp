@@ -5,6 +5,7 @@
 #include <SDL_image.h>
 #include "Interfaces.hpp"
 #include "Utility.hpp"
+#include "Scene.hpp"
 #include <string>
 
 
