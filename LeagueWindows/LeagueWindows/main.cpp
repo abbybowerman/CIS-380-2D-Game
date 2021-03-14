@@ -23,6 +23,7 @@ int main(int argc, char** argv){
 
 	// Make a banana and add to scene. Should update and draw.
 	Elephant* b = new Elephant();
+	b->setScene(&one);
 	one.addUpdateable(b);
 	one.addDrawable(b);
 	Slime* s = new Slime();

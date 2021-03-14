@@ -16,7 +16,7 @@ class laser : public DUGameObject {
 	private:
 		Vector3 velocity;
 
-	friend class Banana;
+	friend class Elephant;
 
 };
 
