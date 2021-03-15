@@ -9,7 +9,7 @@
 
 class Sprite : public DUGameObject {
 public:
-	Sprite(std::string loc);
+	Sprite(std::string* loc);
 	Sprite(SDL_Surface* surface);
 	~Sprite();
 	void update(double delta);

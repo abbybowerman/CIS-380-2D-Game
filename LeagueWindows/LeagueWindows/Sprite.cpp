@@ -2,8 +2,8 @@
 #include "Sprite.hpp"
 #include <string>
 
-Sprite::Sprite(std::string loc) {
-	surface = IMG_Load(loc.c_str());
+Sprite::Sprite(std::string* loc) {
+	surface = IMG_Load(loc->c_str());
 	if (surface == NULL) {
 		SDL_Log("Unable to load image.");
 		exit(1);
